@@ -22,6 +22,6 @@ forms.forEach((form) => {
     label.setAttribute('for', input.id);
     label.textContent = input.name || 'Label';
 
-    input.parentNode.prepend(label, input);
+    input.parentNode.insertBefore(label, input);
   });
 });
